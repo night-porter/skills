@@ -1,6 +1,6 @@
 ---
 name: nightporter
-description: Work with Night Porter, the open-source daemon that handles review comments, failing CI and merge conflicts on the user's GitHub/GitLab PRs while they're away. Use when the user asks to install or set up Night Porter, what it did overnight, to review, approve, reject or take over a Night Porter job, or to check its queue, inbox, config or health.
+description: Work with Night Porter, the open-source daemon that handles review comments, failing CI and merge conflicts on the user's GitHub/GitLab PRs while they're away. Use when the user asks to install, set up, start or stop Night Porter, what it did overnight, to review, approve, reject, dismiss or take over a Night Porter job, or to check its queue, inbox, config or health.
 ---
 
 # Night Porter
@@ -17,13 +17,16 @@ Help the user set it up, step by step, and let them run anything that logs in or
 1. Install: `brew install night-porter/tap/nightporter`, or
    `cargo install nightporter --locked`. Other options:
    https://docs.night-porter.com/getting-started
-2. It needs `git`, `gh` and/or `glab` (logged in), and `claude` and/or `opencode`.
+2. It needs `git`, `gh` and/or `glab` (logged in), and `claude`, `opencode` and/or `codex`.
 3. `nightporter setup` is an interactive wizard (forges, agent, clones folder, autonomy level,
    working hours, repos, background service). The user runs it themselves.
 4. `nightporter doctor` checks everything; each problem comes with a `fix:` line.
 
 Recommend starting at the `suggest` or `draft` level. Night Porter never merges, force-pushes,
 closes or approves PRs, and comments from untrusted people wait in an inbox until the user decides.
+
+To turn it off: `nightporter stop` (or `D` in the TUI); closing the TUI leaves the background daemon
+running. `nightporter service uninstall` stops it starting at login.
 
 ## Rules
 
