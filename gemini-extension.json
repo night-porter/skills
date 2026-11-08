@@ -1,0 +1,5 @@
+{
+  "name": "nightporter",
+  "version": "0.1.0",
+  "description": "Set up Night Porter, read its queue and inbox, explain checks, take over jobs"
+}

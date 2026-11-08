@@ -1,0 +1,10 @@
+{
+  "name": "nightporter",
+  "version": "0.1.0",
+  "description": "Set up Night Porter, read its queue and inbox, explain checks, take over jobs",
+  "author": { "name": "Night Porter", "email": "hi@night-porter.com", "url": "https://night-porter.com" },
+  "homepage": "https://night-porter.com",
+  "repository": "https://github.com/night-porter/skills",
+  "license": "MIT OR Apache-2.0",
+  "keywords": ["night-porter", "pull-requests", "code-review", "ci", "daemon"]
+}
