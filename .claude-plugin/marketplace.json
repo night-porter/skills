@@ -1,0 +1,12 @@
+{
+  "name": "night-porter",
+  "description": "Night Porter: the night shift for your PRs",
+  "owner": { "name": "Night Porter", "email": "hi@night-porter.com", "url": "https://night-porter.com" },
+  "plugins": [
+    {
+      "name": "nightporter",
+      "source": "./",
+      "description": "Set up Night Porter, read its queue and inbox, explain checks, take over jobs"
+    }
+  ]
+}
